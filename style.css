@@ -21,6 +21,7 @@
     --botao-texto: #fff;
     --botao-color: #2C4EFA;
     --texto-att4-color: black;
+    --h6-color: #2C4EFA;
 }
 
 body{
@@ -41,6 +42,7 @@ body.noturno{
     --botao-texto: #3f4142;
     --botao-color: #fff;
     --texto-att4-color: white;
+    --h6-color: #2C4EFA;
 }
 
 nav{
@@ -339,7 +341,7 @@ img{
     position: relative;
     bottom: 10px;
     left: 10px;
-    color: var(--nav-color);
+    color: var(--h6-color);
     font-size: 14px;
     font-weight: 400;
     text-transform: capitalize;

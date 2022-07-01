@@ -5,20 +5,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/animal Point/assets/styles/styles.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Trispace:wght@300&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="/animalPoint/assets/images/logo.png" type="image/x-icon">
-    <title>ANIMAL POINT</title>
-
+    <link href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="/animal Point/assets/styles/styles.css">
+    <title>Animal Point</title>
 </head>
 
 <body>
-    <header class="header">
-        <sub-header class="sub-header">
-            <img src="/animal Point/assets/images/logo.png" class="logo" alt="Logo-Animal-Point" title="Logo-Animal-Point">
+    <header>
+        <sub-header>
+
+            <img src="/animal Point/assets/images/logo.png" alt="Logo-Animal-Point" id="logo">
             <div class="searchBox">
                 <div class="searchToggle">
                     <i class='bx bx-x cancel'></i>
@@ -30,8 +27,9 @@
                 </div>
             </div>
         </sub-header>
-        <nav class="menu-nav">
-            <ul class="lista">
+        
+        <nav>
+            <ul>
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="#parceiros">Parceiros</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -42,95 +40,133 @@
     </header>
     <main>
         <section class="container home" id="home">
-            <column class="left">
-                <img src="/animal Point/assets/images/wireframe-phone.png" alt="" title="App Animal Point">
-                <a href=""><img src="/animal Point/assets/images/img-button-apple.png" alt=""></a>
-                <a href=""><img src="/animal Point/assets/images/img-button-googlePlay.png" alt=""></a>
-            </column>
-            <column class="right">
-                <h1>
-                    Animal Point (EM CONSTRUÇÃO)
-                </h1>
-                <h2>
-                    Um Jeito Animal de Comprar
-                </h2>
-                <h3>
-                    Baixe Agora! Disponível Para Dispositivos Android e IOS.
-                </h3>
-            </column>
+            <div class="col">
+                <img src="/animal Point/assets/images/wireframe-phone.png" alt="Image-Phone" class="phone" id="phone">
+                <a href="#">
+                    <img src="/animal Point/assets/images/img-button-apple.png" alt="link-AppleStore" title="baixar na Apple Store">
+                </a>
+                <a href="#">
+                    <img src="/animal Point/assets/images/img-button-googlePlay.png" alt="link-PlayStore"
+                        title="Baixar na Play Store">
+                </a>
+            </div>
+            <div class="col">
+                <h1>Animal point</h1>
+                <h2>um jeito animal de comprar</h2>
+                <p>baixe agora! Disponível para dispositivos android e IOS</p>
+            </div>
         </section>
-
-
         <section class="container servicos" id="servicos">
-            <h1>Serviços</h1>
-            <h2>Confira a seguir os Serviços que oferecemos</h2>
-            <div class="content">
-                <column>
-                    <ul>
-                        <li>pet shop</li>
-                        <li>taxi pet</li>
-                        <li>hospedagem pet</li>
-                        <li>veterinários</li>
-                        <li>banho e tosa</li>
-                    </ul>
-                </column>
-                <column class="card-group">
-                    <card class="active">
-                        <h1>pet shop</h1>
-                        <img src="/animal Point/assets/images/img-default.png" alt="Imagem-Pet-Shop" title="PET SHOP">
-                        <p>
+            <h1 class="title-session">Serviços</h1>
+            <h2 class="subTitle-session">confira a seguir os serviços que oferecemos</h2>
+
+            <article class="c-carousel c-carousel--simple">
+                <div class="c-carousel__slides js-carousel--simple">
+                    <article class="c-carousel__slide card">
+                        <h1 class="card-title">
+                            Pet Shop
+                        </h1>
+                        <img class="card-img" src="/animal Point/assets/images/img-default.png" alt="">
+                        <p class="card-content">
                             Todos os produtos que você precisa em um só lugar, São diversas lojas com uma variedade de
                             produtos em um só lugar, esperando por você.
                         </p>
-                    </card>
-                </column>
-            </div>
+                    </article>
+                    <article class="c-carousel__slide card">
+                        <h1 class="card-title">
+                            Táxi Dog
+                        </h1>
+                        <img class="card-img" src="/animal Point/assets/images/img-default.png" alt="">
+                        <p class="card-content">
+                            Precisa levar o Pet para o banho e tá sem tempo? Relaxa, pede um PetTaxi no Animal Point.
+                            Ainda não instalou? corre é tudo que você precisa em um só lugar, tá esperando o que?
+                        </p>
+                    </article>
+
+                    <article class="c-carousel__slide card">
+                        <h1 class="card-title">
+                            Pet Shop
+                        </h1>
+                        <img class="card-img" src="/animal Point/assets/images/img-default.png" alt="">
+                        <p class="card-content">
+                            Todos os produtos que você precisa em um só lugar, São diversas lojas com uma variedade de
+                            produtos em um só lugar, esperando por você.
+                        </p>
+                    </article>
+                    <article class="c-carousel__slide card">
+                        <h1 class="card-title">
+                            Táxi Dog
+                        </h1>
+                        <img class="card-img" src="/animal Point/assets/images/img-default.png" alt="">
+                        <p class="card-content">
+                            Precisa levar o Pet para o banho e tá sem tempo? Relaxa, pede um PetTaxi no Animal Point.
+                            Ainda não instalou? corre é tudo que você precisa em um só lugar, tá esperando o que?
+                        </p>
+                    </article>
+                </div>
+                <div class="arrows">
+                    <button class="js-carousel--simple-prev arrow"><i class='bx bx-chevron-left' style='color:#ff7556' ></i></button>
+                    <button class="js-carousel--simple-next arrow"><i class='bx bx-chevron-right' style='color:#ff7556'  ></i></button>
+                </div>
+                <div class="js-carousel--simple-dots"></div>
+            </article>
         </section>
         <section class="container parceiros" id="parceiros">
-            <h1>Parceiros</h1>
-            <h2>conheça nossos parceiros</h2>
-            <carousel class="carrosel">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-                <img src="/animal Point/assets/images/img-default.png" alt="" class="img-parceiros">
-            </carousel>
-            <h2>Seja você um colaborador, entre em contato conosco</h2>
+            <h1 class="title-session">parceiros</h1>
+            <h2 class="subTitle-session">
+                conheça nossos parceiros e apoiadores
+            </h2>
+            <div class="gallery">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+                <img src="/animal Point/assets/images/img-default.png" alt="">
+            </div>
+            <h2 class="subTitle-session"><span> Seja você um colaborador</span>, entre em contato conosco</h2>
         </section>
         <section class="container sobre" id="sobre">
-
+            <h1 class="title-session">Sobre o app</h1>
+            <article>
+                <div class="card">
+                    <h1 class="card-title">Para quem vende</h1>
+                    <p class="card-Content">
+                        Pensando também nos pequenos/médios comerciantes, que saem prejudicados
+                        pelo falta de alcance de clientes, trazemos a solução para você também, torne - se um parceiro
+                        do Animal Point, mostre seu catalogo para todos os nossos clientes, e todo esse poder cabe na
+                        palma da sua mão, expanda suas vendas com apenas alguns cliques,Faça o seu jeito animal de
+                        vender
+                    </p>
+                </div>
+                <div class="card">
+                    <h1 class="card-title">
+                        Para quem compra
+                    </h1>
+                    <p class="card-Content">
+                        O Animal Point é um app, que visa tornar o dia a dia das pessoas mais fácil, buscamos concentrar
+                        todos os serviços para pets, e reunir tudo em um só lugar para que você possa comprar do
+                        conforto da sua casa, não só comprar mas também, agendar serviços como: veterinário, banho e
+                        tosa, e além de agendar, pode pedir um pet taxi para levar seu pet até o local. E aí curtiu? Tá
+                        esperando o que para baixar? Corre
+                    </p>
+                </div>
+            </article>
         </section>
         <section class="container faq" id="faq">
-            <item class="item-question">
-                <div class="question"></div>
-                <div class="answer"></div>
-            </item>
+
         </section>
         <section class="container sac" id="sac">
-
-            <column class="left">
-                <form action="">
-                    <input type="text" id="name">
-                    <input type="text" id="email">
-                    <input type="text" id="assunto">
-                    <input type="text" id="mensage">
-                    <input type="submit" id="btn-enviar" value="Enviar">
-                </form>
-            </column>
-            <column class="right">
-
-            </column>
         </section>
     </main>
     <footer>
-        <group></group>
-        <group></group>
-        <group></group>
     </footer>
+    <script src="https://unpkg.com/boxicons@2.1.2/dist/boxicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="/animal Point/assets/script/js/index.js"></script>
 </body>
 

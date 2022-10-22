@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+footer{
+    background-color: #E0AAFF;
+    padding: 30px;
+    text-align: center;
+    flex-shrink: 0;
+ 
+    
+}
+
+
+header > hr{
+    border-color: #E0AAFF;
+}
+
+.conteudo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 755px;
+}
+
+.main-left {
+    margin-top: 10px;
+    margin-left: -15%;
+    text-align: center;
+
+}
+
+.main-left > h1 {
+    color: #3C096C;
+}
+
+a > input{
+    padding: 12px 0px;
+    margin: 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.main-left > a > input {
+    width: 80%;
+    border-color: #230336;
+    background: #7B2CBF;
+    color: #E0AAFF;
+}
+
+.main-left > a > input:hover{
+    border-color: #7B2CBF;
+    background: #E0AAFF;
+    color: #7B2CBF;
+    transition: all 0.3s ease;
+}
+
+.btnCad {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.btnCad > h4 {
+    color: #1d127c;
+}
+
+.btnCad > a > input {
+    width: 50%;
+    border-color: #7B2CBF;
+    background: #fff;
+    color: #7B2CBF;
+}
+
+.btnCad > a > input:hover {
+    width: 50%;
+    border-color: #1d0d25;
+    background: #1d127c;
+    color: #E0AAFF;
+    transition: all 0.3s ease;
+}
+
+
+
+.imgLogo{
+    width: 294px;
+    height: 100px;
+    margin-left: 40%;
+    margin-top: 20px;
+}
+
+li > a {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+}
+
+

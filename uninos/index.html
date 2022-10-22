@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/uninos/css/style.css">
+    <title>LOGIN</title>
+    <style>
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <img src="/uninos/imgs/logo.png" alt="logo" class="imgLogo">
+        <h4>FAÇA LOGIN OU SE CADASTRE</h4>
+    </div>
+    <form action="/uninos/routes/principal.html">
+    <div class="main-login">
+        <div class="left-login">
+
+            <div class="card-login">
+                <h1>LOGIN</h1>
+                <div class="text-field">
+                    <label for="usuario">EMAIL</label>
+                    <input type="text" name="usuario" placeholder="digite seu email">
+                </div>
+                <div class="text-field">
+                    <label for="senha">SENHA</label>
+                    <input type="password" name="senha" placeholder="digite sua senha">
+                </div>
+                <h5> <a href="#">ESQUECI MINHA SENHA</a> </h5>
+                <button  class="btn-login" type="submit">LOGIN</button>
+
+            </form>
+            <form style="margin-left: -10%;" action="/uninos/routes/cadastro.html">
+                <button class="btn-loginCAD" type="submit">CADASTRE-SE</button>
+            
+            </div>
+        </div>
+    </form>
+        <div class="right-login">
+            <img src="/uninos/imgs/imgWOMAN.svg" class="left-login-img" alt="Login Animation">
+
+        </div>
+    </div>
+</body>
+</html>

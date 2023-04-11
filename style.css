@@ -22,6 +22,7 @@
     --botao-color: #2C4EFA;
     --texto-att4-color: black;
     --h6-color: #2C4EFA;
+  
 }
 
 body{
@@ -43,7 +44,10 @@ body.noturno{
     --botao-color: #fff;
     --texto-att4-color: white;
     --h6-color: #2C4EFA;
+   
 }
+
+
 
 nav{
     position: fixed;
@@ -349,14 +353,28 @@ img{
 }
 
 /* SOBRE MIM */
+
+#sobre{
+     background-image: var(--img-me);   
+}
+
 .contai{
     padding-top: 190px;
     margin-left: 5%;
+   
+
+}
+
+.teste{
+    width: 500px;
 }
 
 .contai .hero-text{
     margin-bottom: 40px;
+    
 }
+
+
 
 .contai .hero-text h1{
     color: var(--h1-color);
@@ -376,7 +394,7 @@ img{
 }
 
 .contai .hero-text p{
-    width: 440px;
+    
     max-width: 100%;
     color: var(--titulo-texto);
     font-size: 15px;

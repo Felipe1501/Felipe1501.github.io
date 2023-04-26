@@ -5,7 +5,7 @@ const body = document.querySelector("body"),
         sidebarAbrir= document.querySelector(".sidebarAbrir"),
         sidebarFechar = document.querySelector(".sidebarFechar"),
         search = document.querySelector(".pesquisar-botao input"),
-        imgs = document.querySelectorAll(".imgs_box");
+        project = document.querySelectorAll(".card-container-1");
 
         //armazenar escolha de modo noturno ou claro
         let getMode = localStorage.getItem("mode");
@@ -48,11 +48,11 @@ const body = document.querySelector("body"),
         if(e.key == "Enter"){
             let searchValue = search.value,
             value = searchValue.toLowerCase();
-            imgs.forEach(imgs =>{
-                if(value === imgs.dataset.name){
-                    return imgs.style.display =  "block";
+            project.forEach(project =>{
+                if(value === project.dataset.name){
+                    return project.style.display =  "block";
                 }
-                imgs.style.display = "none"; 
+                project.style.display = "none"; 
             });
 
         }
@@ -61,8 +61,8 @@ const body = document.querySelector("body"),
     search.addEventListener("keyup", () =>{
         if(search.value != "") return;
 
-        imgs.forEach(imgs =>{
-            imgs.style.display =  "block";
+        project.forEach(project =>{
+            project.style.display =  "block";
         });
     });
 

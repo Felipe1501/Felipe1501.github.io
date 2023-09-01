@@ -1,0 +1,280 @@
+*{
+  box-sizing: border-box;
+}
+:root {
+  --white: #fafafa;
+  --dark-blue: #0c226f;
+  --light-blue: #45709e;
+  --yellow: #ffa500;
+  --dark-grey: #263238;
+  --light-grey: #e4e4e4;
+}
+body {
+  display: flex;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  background-color: var(--dark-blue);
+}
+nav button {
+  display: none;
+}
+button i {
+  background-color: var(--dark-blue);
+  color: white;
+}
+.nav-content {
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  width: 20vw;
+  min-width: 210px;
+  max-width: 300px;
+  flex-direction: column;
+  background-color: var(--dark-blue);
+}
+.user-container {
+  display: flex;
+  width: 100%;
+  padding: 15px 10px;
+  gap: 5px;
+}
+.user-container img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.user-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  justify-content: center;
+}
+.user-content p {
+  color: white;
+}
+nav ul {
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+  width: 100%;
+}
+nav ul li {
+  height: fit-content;
+  width: 100%;
+}
+nav a {
+  font-size: 1.05em;
+  height: fit-content;
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--dark-blue);
+  color: white;
+}
+nav a:hover {
+  color: var(--yellow);
+}
+nav a i {
+  font-size: 1.5rem;
+  width: 30px;
+}
+nav a i::before {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 70px 20px 20px 20px;
+}
+.reminder {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.reminder h4 {
+  display: flex;
+  justify-content: start;
+}
+
+.reminder-cards-container {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  border-bottom: 2px solid #00000020;
+  padding-bottom: 20px;
+}
+.reminder-card-container {
+  display: flex;
+  gap: 15px;
+  width: 30%;
+  min-width: 200px;
+  max-width: 350px;
+  height: 100%;
+  background-color: white;
+  box-shadow: 2px 2px 5px #00000030;
+  padding: 10px;
+}
+.yellow-stroke {
+  width: 10px;
+  height: 100%;
+  background-color: var(--yellow);
+}
+.reminder-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.reminder-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.op {
+  opacity: 0.8;
+}
+.medium {
+  font-weight: 600;
+}
+.posts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  width: 100%;
+}
+.post-container {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 70%;
+  min-width: 260px;
+}
+.post-main-content {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 3px 3px 2px #00000030;
+}
+.post-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: var(--yellow);
+}
+.author-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.author-info img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.post-date {
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.post-date p {
+  display: flex;
+  justify-content: end;
+}
+.post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+}
+.file-container {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  background-color: var(--light-grey);
+}
+.post-comments {
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px;
+  box-shadow: 1px 1px 3px #00000030;
+}
+.post-comments .yellow-stroke {
+  width: 3px;
+}
+.comments-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 0;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+form i {
+  display: flex;
+  position: absolute;
+  margin-left: 10px;
+}
+form input {
+  width: 100%;
+  padding: 10px 30px;
+  border: 2px solid #00000050;
+  border-radius: 50px;
+}
+form input:focus {
+  border: 2px solid var(--light-blue);
+  outline: none;
+}
+
+@media (max-width: 540px) {
+  .nav-content {
+    display: none;
+    transition:0.5s;
+  }
+  nav button {
+    background-color: var(--dark-blue);
+    display: block;
+    border: none;
+    outline: none;
+    height: 100%;
+  }
+  button i {
+    font-size: 30px;
+  }
+  nav {
+    width: 30px;
+    min-width: 30px;
+    height: 100vh;
+    z-index: 2;
+    transition:0.5s;
+    position: fixed;
+  }
+  nav.active{
+    min-width: 70%;
+  }
+  nav.active > .nav-content {
+    display: flex;
+    width: 100%;
+  }
+  main{
+    padding: 70px 20px 20px 50px;
+  }
+}

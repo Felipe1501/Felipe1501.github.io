@@ -1,0 +1,128 @@
+*{
+  box-sizing: border-box;
+}
+header {
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    justify-content: space-between;
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.25);
+    padding: 0 30px;
+    position: fixed;
+    z-index: 1;
+  }
+  .header-images {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 20%;
+  }
+  .header-images img {
+    height: 60px;
+  }
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    position: absolute;
+    width: calc(100% - 60px);
+  }
+  #button-nav {
+    display: none;
+    position: absolute;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    height: 100%;
+    background-color: var(--white);
+  }
+  li {
+    height: 100%;
+  }
+  li a {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    border-bottom: 2px solid var(--dark-blue);
+    color: var(--dark-blue);
+    text-decoration: none;
+    font-weight: 600;
+  }
+  li a:hover {
+    cursor: pointer;
+    border-bottom: var(--yellow) 2px solid;
+  }
+  #btn-login {
+    background-color: var(--dark-blue);
+    width: 150px;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    z-index: 1;
+    border: none;
+    transition: 0.5s;
+  }
+  button:hover {
+    cursor: pointer;
+    border-radius: 12px;
+    transition: 0.5s;
+  }
+  #btn-login p {
+    color: white;
+    font-size: 18px;
+  }
+
+  @media (max-width: 1023px) {
+    nav {
+      width: 100%;
+      left: 0;
+    }
+    ul {
+      display: none;
+    }
+    .active {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 60vh;
+      background-color: var(--white);
+      position: absolute;
+      top: 56px;
+      box-shadow: 0px 300px 0px rgb(0, 0, 0, 0.5);
+    }
+    li {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    li a {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    #button-nav {
+      display: flex;
+      flex-direction: column;
+      background-color: transparent;
+      border: none;
+    }
+    .button-line {
+      width: 30px;
+      height: 3px;
+      background-color: var(--dark-blue);
+      margin: 3px;
+    }
+  }

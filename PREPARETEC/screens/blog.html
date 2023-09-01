@@ -1,0 +1,98 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="../assets/styles/style.css" />
+    <link rel="stylesheet" href="../assets/styles/blog.css" />
+    <link rel="stylesheet" href="../assets/styles/header.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/42e4bfbdd4.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>PREPARETEC - Blog</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="header-images">
+          <img
+            src="../assets/images/preparetec-logo.png"
+            alt="Logo do PREPARETEC"
+            id="preparetec"
+          />
+          <img src="../assets/images/dem-logo.png" alt="Logo do DEM" id="dem" />
+        </div>
+        <nav>
+          <button id="button-nav">
+            <div class="button-line"></div>
+            <div class="button-line"></div>
+            <div class="button-line"></div>
+          </button>
+          <ul id="nav">
+            <li><a href="../index.html#inicio">Início</a></li>
+            <li><a href="../index.html#projeto">Projeto</a></li>
+            <li><a href="../index.html#participe">Participe</a></li>
+            <li><a href="../index.html#quem-somos">Quem somos?</a></li>
+            <li id="blog"><a>Blog</a></li>
+          </ul>
+        </nav>
+        <button id="btn-login">
+          <img src="../assets/images/login-icon.png" alt="Ícone de login" />
+          <p>Entrar</p>
+        </button>
+      </header>
+      <section class="content">
+        <div class="group-title">
+          <h1 class="h1-2">Blog</h1>
+          <h5 class="h5-2">
+            Fique antenado nas últimas novidades a respeito do Preparetec
+          </h5>
+        </div>
+        <aside class="blog-cards">
+          <div class="blog-card fixed">
+            <div class="card-header">
+              <h4 class="h4-2">O Início está mais próximo do que nunca!</h4>
+              <div class="fixed-pin">
+                <i class="fa-solid fa-thumbtack"></i>
+                <p class="p2">Publicação Fixada</p>
+              </div>
+            </div>
+            <div class="card-content">
+              <p>
+                O início das aulas será no dia 04/09 (4 de Setembro), e o fim do
+                cursinho está previsto para a primeira semana de dezembro, pouco
+                antes do vestibulinho da ETEC.
+              </p>
+              <p>
+                As aulas serão na escola EMEF José Carlos de Freitas, e os
+                alunos serão divididos em duas turmas: Turma 1, com aulas
+                segunda e terça, e Turma 2, com aulas quarta e quinta.
+              </p>
+              <h5 class="h5-2">Turma 1</h5>
+              <p>EMEF Sirana Koukdjian</p>
+              <p>EMEF Hortência Quintino F. Botelho</p>
+              <p>EMEF José Cesário P. Filho</p>
+              <h5 class="h5-2">Turma 2</h5>
+              <p>EMEF Regina Maria</p>
+              <p>EMEF Jacoub Koukdjian</p>
+              <p>EMEF Vereador José Carlos</p>
+            </div>
+          </div>
+        </aside>
+      </section>
+    </main>
+
+    <script>
+      btnBlog = document.getElementById("blog");
+      btnText = btnBlog.getElementsByTagName("a")[0];
+
+      btnText.style.color = "#ffa500 ";
+      btnText.style.borderBottom = "2px solid #ffa500";
+    </script>
+  </body>
+</html>

@@ -25,6 +25,6 @@ var btnSearchCPF = document.getElementsByClassName("btn-saiba-mais");
 
 for (i = 0; i < btnSearchCPF.length; i++) {
   btnSearchCPF[i].addEventListener("click", () => {
-    window.location.href = "screens/Login/consultarCPF.html";
+    window.location.href = "screens/login/consultarCPF.html";
   });
 }
